@@ -4,8 +4,7 @@ What the heck is Body Biasing Injection? This is a method of injecting faults in
 
 You can see the following papers for the origins of this:
 
-	Philippe Maurine, Karim Tobich, Thomas Ordas, Pierre Yvan Liardet. Yet Another Fault Injection
-	Technique : by Forward Body Biasing Injection. YACC’2012: Yet Another Conference on Cryptography, Sep 2012, Porquerolles Island, France. fflirmm-00762035f
+* Philippe Maurine, Karim Tobich, Thomas Ordas, Pierre Yvan Liardet. Yet Another Fault Injection Technique : by Forward Body Biasing Injection. YACC’2012: Yet Another Conference on Cryptography, Sep 2012, Porquerolles Island, France. fflirmm-00762035f
 
 
 ## BBI Made Simple
