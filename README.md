@@ -23,4 +23,8 @@ The idea of this repo is to perform BBI using a simple probe, which uses a trans
 
 ## CARDIS 2020 Paper
 
-This work was presented at CARDIS 2020, see an extended version of the paper in the [CARDIS](cardis2020/ChipJabber_BBI.pdf) directory of this repository.
+This work was presented at CARDIS 2020, see an extended version of the paper in the [CARDIS](cardis2020/ChipJabber_BBI.pdf) directory of this repository. If you use these results, please reference:
+
+* Colin O'Flynn. **Low-Cost Body Biasing Injection (BBI) Attacks on WLCSP Devices.** In Proceedings of the 19th Smart Card Research and Advanced Application Conference (CARDIS 2020), November 2020.
+
+The exact citation will be available after post-proceedings are published.
