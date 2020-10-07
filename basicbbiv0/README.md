@@ -4,9 +4,9 @@ This revision of the BBI probe matches the one in Colin's CARDIS 2020 paper. It 
 
 ## Construction Instructions
 
-### PCB Assembly
+### PCB Details
 
-The PCB was built with parts on hand, so it is very bare-bones.
+The PCB was built with parts on hand, so it is very bare-bones. You might want to see Rev1 edition for a better design.
 
 The following shows the schematic:
 
@@ -33,7 +33,11 @@ To wind the coil:
 2. Use some glue (the super-glue + accelerator is easiest here) to hold the winding in place.
 3. Wind 60 turns of the 30 AWG magnet wire on-top. You'll have to go back and forth several times. It can be fairly messy and still seems to work fine.
 
-Leave lots of spare wire, as you can tin the wires once you see how it fits onto the PCB.
+Leave lots of spare wire, as you can tin the wires once you see how it fits onto the PCB. See details below.
+
+### PCB Assembly
+
+In addition to the coil, you will need a pogo pin. Harwin P25-0123 is available on Digikey & Mouser, otherwise you can find similar ones on various cheaper sites if you wish.
 
 ## Usage Instructions
 
