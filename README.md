@@ -1,6 +1,6 @@
 # ChipJabber-BasicBBI
 
-What the heck is Body Biasing Injection? This is a method of injecting faults into the backside of an IC, which results in an injection somewhere between EMFI & Laser-FI. This work has been presented since 2012, yet there is little follow on work.
+What the heck is Body Biasing Injection? This is a method of injecting faults into the backside of an IC, which results in an injection somewhere between EMFI & Laser-FI. This work has been presented since 2012, yet there has been less follow on work compared to topics such as EMFI & Laser FI. ChipJabber-BasicBBI tries to help with that by making available both the injection tool & target for all!
 
 You can see the following papers for the origins of this:
 
