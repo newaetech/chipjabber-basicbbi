@@ -1,6 +1,22 @@
+# ChipJabber-BasicBBI Rev0
+
+This revision of the BBI probe matches the one in Colin's CARDIS 2020 paper. It was originally designed to be made on a Bantam PCB mill, so is extremely bare-bones.
+
 ## Construction Instructions
 
 ### PCB Assembly
+
+The PCB was built with parts on hand, so it is very bare-bones.
+
+The following shows the schematic:
+
+![](schematic.png)
+
+And the base PCB:
+
+![](pcb.png)
+
+Gerber files are in the relevant directory, they should be loadable in the Bantam PCB milling software. If you are going to the effort of ordering PCBs, suggest to use the V1 edition instead which more effort was put into.
 
 ### Custom Coil Winding
 
@@ -21,3 +37,10 @@ Leave lots of spare wire, as you can tin the wires once you see how it fits onto
 
 ## Usage Instructions
 
+To use this probe:
+
+1. Connect a pulse generator to the MOSFET gate. In the COSADE BBI work, the ChipWhisperer-Lite is used. The signal routed to the on-board mosfet is tapped off at JP8, the center pin as the "glitch_lp" mosfet drive signal.
+
+2. Connect a power source that has a 100~mA current limit to the probe. If you don't have a current limited supply, use a ~100 ohm resistor inline. The probe discharges from the capacitors on-board anyway. **WARNING: Using a non-current-limited supply it becomes likely you accidentally turn on the MOSFET for too long, which will have a direct short across the supply rails.**
+
+3. Place the bbi probe over your WLCSP device. If you aren't sure if the package exposes the die backside, use a DMM to check for a 20K-400K resistance between the die backside and VCC or GND.
