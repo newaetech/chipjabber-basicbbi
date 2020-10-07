@@ -4,7 +4,13 @@ What the heck is Body Biasing Injection? This is a method of injecting faults in
 
 You can see the following papers for the origins of this:
 
-* Philippe Maurine, Karim Tobich, Thomas Ordas, Pierre Yvan Liardet. Yet Another Fault Injection Technique : by Forward Body Biasing Injection. YACC’2012: Yet Another Conference on Cryptography, Sep 2012, Porquerolles Island, France. fflirmm-00762035f
+* Philippe Maurine. **Techniques for EM Fault Injection: Equipments and Experimental Results**. FDTC 2012: Workshop on Fault Diagnosis and Tolerance in Cryptography. 9 Sept. 2012. [PDF Available](https://hal-lirmm.ccsd.cnrs.fr/lirmm-00761778/document).
+
+* Philippe Maurine, Karim Tobich, Thomas Ordas, Pierre Yvan Liardet. **Yet Another Fault Injection Technique: by Forward Body Biasing Injection**. YACC’2012: Yet Another Conference on Cryptography, Sep 2012, Porquerolles Island, France.  [PDF Available](https://hal-lirmm.ccsd.cnrs.fr/lirmm-00762035/document).
+
+* K. Tobich, P. Maurine, P. -. Liardet, M. Lisart and T. Ordas, **Voltage Spikes on the Substrate to Obtain Timing Faults**, 2013 Euromicro Conference on Digital System Design, Los Alamitos, CA, 2013, pp. 483-486. [PDF Available](https://www.researchgate.net/profile/Philippe_Maurine/publication/262352179_Voltage_Spikes_on_the_Substrate_to_Obtain_Timing_Faults/links/54b805100cf2c27adc487b12/Voltage-Spikes-on-the-Substrate-to-Obtain-Timing-Faults.pdf)
+
+* Noemie Beringuier-Boher, Marc Lacruche, David El-Baze, Jean-Max Dutertre, Jean-Baptiste Rigaud, and Philippe Maurine. 2016. **Body Biasing Injection Attacks in Practice**. In Proceedings of the Third Workshop on Cryptography and Security in Computing Systems (CS2 '16). [PDF Available](https://dl.acm.org/doi/pdf/10.1145/2858930.2858940)
 
 
 ## BBI Made Simple
