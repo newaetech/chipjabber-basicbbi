@@ -39,6 +39,10 @@ Leave lots of spare wire, as you can tin the wires once you see how it fits onto
 
 In addition to the coil, you will need a pogo pin. Harwin P25-0123 is available on Digikey & Mouser, otherwise you can find similar ones on various cheaper sites if you wish.
 
+The assembled probe could look something like this:
+
+![](basicbbiprobe.jpeg)
+
 ## Usage Instructions
 
 To use this probe:
@@ -48,3 +52,9 @@ To use this probe:
 2. Connect a power source that has a 100~mA current limit to the probe. If you don't have a current limited supply, use a ~100 ohm resistor inline. The probe discharges from the capacitors on-board anyway. **WARNING: Using a non-current-limited supply it becomes likely you accidentally turn on the MOSFET for too long, which will have a direct short across the supply rails.**
 
 3. Place the bbi probe over your WLCSP device. If you aren't sure if the package exposes the die backside, use a DMM to check for a 20K-400K resistance between the die backside and VCC or GND.
+
+4. Connect the output of the transformer "ground" pin (the not-needle-side) to target pcb gnd.
+
+5. Hit that fault inject button!
+
+If you want a starting point, see the Jupyter notebook for the CARDIS paper.
