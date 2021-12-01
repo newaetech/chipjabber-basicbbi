@@ -12,7 +12,7 @@ See the CARDIS 2020 paper for general information on the design & usage of this 
 
 ```
  +------------ Pulse input (logic level drive, AC-coupled)
- |  +--------- Optional pull-up
+ |  +--------- Optional pull-up level input
  |  |
 <[] [] [] []|======
        |  |
@@ -24,8 +24,10 @@ To prevent you from blowing up the transformer T1 or MOSFET Q1, the input pulse 
 
 When using the probe in AC-coupled mode (the default), you can also take advantage of the AC-coupling to allow usage from the ChipWhisperer "glitch output" (which is effectively an *open-collector* drive). To do this:
 
-* Connect the pull-up to a 3.3V supply.
-* Use the ChipWhisperer to pull down the pulse input to generate pulses. This works due to the AC-coupling of the input signal.
+* Connect the `pull-up input` to a 3.3V supply.
+* Connect the ChipWhisperer glitch output SMA to the `pulse input`. This works due to the AC-coupling of the input signal, as the ChipWhisperer glitch output SMA will drive the pulse input low. Use the `glitch_lp` MOSFET output option on the ChipWhisperer-Lite/Pro/Husky.
+
+**NOTE:** If you use the logic-level ChipWhisperer outputs (such as the HS2 line), you don't need to do this pull-up hack. The ChipWhisperer logic-level outputs can directly be connected to the `pulse input`.
 
 
 ## Parts
@@ -55,7 +57,7 @@ If you need to sub `D1` or `Q1`:
  
 `J1` can be sub'd with any header that you can solder, or even just wire.
 
-The other parts are very generic:
+The other parts are very generic, I didn't have part numbers for them:
 
 ```
 1, 100n 0603 [Generic]
@@ -66,4 +68,12 @@ The other parts are very generic:
 
 ## Schematic
 
+A PDF of the schematic is in the repo, here is a image for convenience:
+
 ![](basicbbi-v1-mainpcb-schematic.png)
+
+## PCB
+
+PCB gerbers are in the repo.
+
+One version of the gerbers has been generated with the Bantam Mill output standard. The vias around the mounting holes have also been removed in this version (since they would probably damage your bit and do nothing with a milled PCB).
