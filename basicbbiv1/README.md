@@ -39,6 +39,7 @@ The following are the 'specific' parts used in the design (format is `QTY, PART 
 1,AO3422,Q1
 1,ATB322524,T1
 1,TSM-102-01-L-SH,J1
+1,P25-0123,PROBE
 ```
 
 If you need to sub `D1` or `Q1`:
@@ -56,6 +57,8 @@ If you need to sub `D1` or `Q1`:
 	* 50V or higher Drain to Source Voltage (Vdss) 
  
 `J1` can be sub'd with any header that you can solder, or even just wire.
+
+`PROBE` is a sharp pogo pin. The Harwin `P25-0123` is a good low-cost option, you can get fancier (smaller point) probes too.
 
 The other parts are very generic, I didn't have part numbers for them:
 
