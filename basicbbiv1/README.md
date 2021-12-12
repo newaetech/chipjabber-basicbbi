@@ -2,7 +2,7 @@
 
 The BasicBBI Rev1 allows assembly with off-the-shelf parts, while adding some critical features such as mounting holes and protection from easily destroying the probe. The current test board ('PCB Rev A') looks like this:
 
-![](mainpcb/photo/pcb_render.png)
+![](mainpcb/photo/basicbbi-rev1.jpg)
 
 **Be aware this is untested.** A version of this PCB has been validated, but this exact one isn't yet.
 
