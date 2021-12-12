@@ -4,7 +4,7 @@ The BasicBBI Rev1 allows assembly with off-the-shelf parts, while adding some cr
 
 ![](mainpcb/photo/basicbbi-rev1.jpg)
 
-**Be aware this is untested.** A version of this PCB has been validated, but this exact one isn't yet.
+This PCB works, but the 'open collector' drive feature (discussed below) has too many limits to be useful. However you can still drive it with a 3.3V logic-level waveform from the ChipWhisperer board (or any other signal source).
 
 ## Usage
 
