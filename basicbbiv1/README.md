@@ -22,11 +22,23 @@ See the CARDIS 2020 paper for general information on the design & usage of this 
 
 To prevent you from blowing up the transformer T1 or MOSFET Q1, the input pulse drive is AC-coupled. You can remove this coupling by shorting `J2`.
 
-The "optional pull-up" was originally designed to allow driving the BBI probe directly from a ChipWhisperer "glitch" output - this does't work well in practice, as you need a very long "glitch width" in order to get a positive
-spike on the MOSFET gate (and not the negative spike you'll see with narrow pulses). If driving from ChipWhisperer-Lite use the logic-level glitch output available either on HS2 or with the 
+The "optional pull-up" was originally designed to allow driving the BBI probe directly from a ChipWhisperer "glitch" output - this doesn't work well in practice, as you need a very long "glitch width" in order to get a positive
+spike on the MOSFET gate (and not the negative spike you'll see with narrow pulses). Mostly you can leave the "optional pull up" wire disconnected without issue.
 
-**NOTE:** If you use the logic-level ChipWhisperer outputs (such as the HS2 line), you don't need to do this pull-up hack. The ChipWhisperer logic-level outputs can directly be connected to the `pulse input`.
 
+### Connections
+
+1. Connect a pulse generator to the MOSFET gate. In the COSADE BBI work, the ChipWhisperer-Lite is used. The signal routed to the on-board mosfet is tapped off at JP8, the center pin as the "glitch_lp" mosfet drive signal.
+
+2. Connect a power source that has a 100~mA current limit to the probe. A 75-ohm resistor tries to limit current, but at 30V this means up to 400mA will flow.
+
+3. Place the bbi probe over your WLCSP device. If you aren't sure if the package exposes the die backside, use a DMM to check for a 20K-400K resistance between the die backside and VCC or GND.
+
+4. Connect the output of the transformer "ground" pin (the not-needle-side) to target pcb gnd.
+
+5. Hit that fault inject button!
+
+If you want a starting point, see the Jupyter notebook for the CARDIS paper.
 
 ## Parts
 
@@ -43,7 +55,7 @@ The following are the 'specific' parts used in the design (format is `QTY, PART 
 If you need to sub `D1` or `Q1`:
 
 * D1 is for reverse polarity protection so can be skipped. If you can't find that part use the following:
-	* DO-214AC (SMA) package
+	* DO-214AC (SMA) package (SOD123 packages fit - a SOD123 package diode is in the photo)
 	* Schottky
 	* 500mA or higher current rating
 	* 40V or higher voltage rating
@@ -52,7 +64,9 @@ If you need to sub `D1` or `Q1`:
 	* Check pinout matches expected
 	* Logic level drive (spec of something like 2.5V 'Max Rds On', 4.5V 'Min Rds On')
 	* 1.8A or higher (only for pulse current reasons - can get away with smaller one)
-	* 45V or higher Drain to Source Voltage (Vdss) 
+	* 45V or higher Drain to Source Voltage (Vdss)
+
+Currently (Dec 2021) there is limited stock of suitable MOSFETs, if you can't find one see Issue #1. 
  
 `J1` can be sub'd with any header that you can solder, or even just wire.
 
