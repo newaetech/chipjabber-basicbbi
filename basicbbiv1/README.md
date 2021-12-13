@@ -4,7 +4,7 @@ The BasicBBI Rev1 allows assembly with off-the-shelf parts, while adding some cr
 
 ![](mainpcb/photo/basicbbi-rev1.jpg)
 
-This PCB works, but the 'open collector' drive feature (discussed below) has too many limits to be useful. However you can still drive it with a 3.3V logic-level waveform from the ChipWhisperer board (or any other signal source).
+It requires a 3.3V logic-level waveform from the ChipWhisperer board (or any other signal source).
 
 ## Usage
 
@@ -12,7 +12,7 @@ See the CARDIS 2020 paper for general information on the design & usage of this 
 
 ```
  +------------ Pulse input (logic level drive, AC-coupled)
- |  +--------- Optional pull-up level input
+ |  +--------- Optional pull-up or termination.
  |  |
 <[] [] [] []|======
        |  |
@@ -22,10 +22,8 @@ See the CARDIS 2020 paper for general information on the design & usage of this 
 
 To prevent you from blowing up the transformer T1 or MOSFET Q1, the input pulse drive is AC-coupled. You can remove this coupling by shorting `J2`.
 
-When using the probe in AC-coupled mode (the default), you can also take advantage of the AC-coupling to allow usage from the ChipWhisperer "glitch output" (which is effectively an *open-collector* drive). To do this:
-
-* Connect the `pull-up input` to a 3.3V supply.
-* Connect the ChipWhisperer glitch output SMA to the `pulse input`. This works due to the AC-coupling of the input signal, as the ChipWhisperer glitch output SMA will drive the pulse input low. Use the `glitch_lp` MOSFET output option on the ChipWhisperer-Lite/Pro/Husky.
+The "optional pull-up" was originally designed to allow driving the BBI probe directly from a ChipWhisperer "glitch" output - this does't work well in practice, as you need a very long "glitch width" in order to get a positive
+spike on the MOSFET gate (and not the negative spike you'll see with narrow pulses). If driving from ChipWhisperer-Lite use the logic-level glitch output available either on HS2 or with the 
 
 **NOTE:** If you use the logic-level ChipWhisperer outputs (such as the HS2 line), you don't need to do this pull-up hack. The ChipWhisperer logic-level outputs can directly be connected to the `pulse input`.
 
@@ -54,7 +52,7 @@ If you need to sub `D1` or `Q1`:
 	* Check pinout matches expected
 	* Logic level drive (spec of something like 2.5V 'Max Rds On', 4.5V 'Min Rds On')
 	* 1.8A or higher (only for pulse current reasons - can get away with smaller one)
-	* 50V or higher Drain to Source Voltage (Vdss) 
+	* 45V or higher Drain to Source Voltage (Vdss) 
  
 `J1` can be sub'd with any header that you can solder, or even just wire.
 
