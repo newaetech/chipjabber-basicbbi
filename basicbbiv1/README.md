@@ -28,9 +28,10 @@ spike on the MOSFET gate (and not the negative spike you'll see with narrow puls
 
 ### Connections
 
-1. Connect a pulse generator to the MOSFET gate. In the COSADE BBI work, the ChipWhisperer-Lite is used. The signal routed to the on-board mosfet is tapped off at JP8, the center pin as the "glitch_lp" mosfet drive signal.
+1. Connect a pulse generator to the `Pulse Input`. In the COSADE BBI work, the ChipWhisperer-Lite is used. You can use either the HS2 output, or if you need to use HS2 for clock output, the header JP8 has the signals 
+   routed to the "glitch_lp" and "glitch_hp" MOSFETs. The center pin has the "glitch_lp" mosfet drive signal, and can be routed to the `Pulse input` of the BBI probe.
 
-2. Connect a power source that has a 100~mA current limit to the probe. A 75-ohm resistor tries to limit current, but at 30V this means up to 400mA will flow.
+2. Connect a 0V to 30V power source that has a 100~mA current limit to the probe. A 75-ohm resistor tries to limit current, but at 30V this means up to 400mA will flow, so it is preferred if you have a current limited supply.
 
 3. Place the bbi probe over your WLCSP device. If you aren't sure if the package exposes the die backside, use a DMM to check for a 20K-400K resistance between the die backside and VCC or GND.
 
