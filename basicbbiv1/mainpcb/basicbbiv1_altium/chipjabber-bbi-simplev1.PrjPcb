@@ -114,9 +114,105 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.REP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for chipjabber-bbi-simplev1\bbi-simple-rev1-proto.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=OUTPUT\FILES\NC Drill\bbi-simple-rev1.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=OUTPUT\FILES\NC Drill\bbi-simple-rev1.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.REP
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=OUTPUT\FILES\Gerber\bbi-simple-rev1.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=OUTPUT\FILES\NC Drill\bbi-simple-rev1.TXT
+DItemRevisionGUID=
+
 [Parameter1]
 Name=PrjLicense
-Value=BSD
+Value=CC BY SA 3.0
 
 [Parameter2]
 Name=PrjName
@@ -249,16 +345,6 @@ OutputName21=Mixed Sim Netlist
 OutputDocumentPath21=
 OutputVariantName21=
 OutputDefault21=0
-OutputType22=SIMetrixNetlist
-OutputName22=SIMetrix
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-OutputType23=SIMPLISNetlist
-OutputName23=SIMPLIS
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -270,22 +356,12 @@ OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
 TargetPrinter=Virtual Printer
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Composite
 OutputName1=Composite Drawing
 OutputDocumentPath1=
@@ -345,9 +421,7 @@ OutputName10=Schematic Prints
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
-PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=0.92|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-Configuration10_Name1=OutputConfigurationParameter1
-Configuration10_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=C:\Users\colin\Dropbox (NewAE Technology Inc)\engineering\hardware_fi\chipjabber-basicbbi\basicbbiv1\mainpcb\basicbbiv1_altium\chipjabbersimplev1.SchDoc
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType11=SimView Print
 OutputName11=SimView Prints
 OutputDocumentPath11=
